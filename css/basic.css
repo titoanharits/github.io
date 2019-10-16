@@ -1,4 +1,13 @@
 
+@font-face {
+        font-family: "jose";
+        src: url(../font/Jose.ttf);
+}
+
+body{
+  font-family: 'jose';
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
