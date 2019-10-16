@@ -34,16 +34,55 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  .nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #111;
+  * {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+}
+.navigasi {
+    position: fixed;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 35px;
+      padding-right: 35px;
+    width: 98.5%;height: 60px;
+    background: white;
+
+}
+.navigasi > .nav-menu {
+    position: relative;
+    margin: 0;padding: 0 10px;
+    list-style: none;
+    background: #2196f3;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.nav-menu > li {
+  display: inline-block;
+  float: right;
+
+}
+.nav-menu > li > a {
+    display: block;
+    margin: 0 5px;
+    padding: 0 15px;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+.nav-menu > li > a:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.logo{
+  float: left;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
