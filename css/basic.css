@@ -153,11 +153,3 @@ a {
   .header .menu-icon {
     display: none;
   }
-
-  .logo {
-    display: block;
-    float: left;
-    height: 40px;
-    padding-top: 15px;
-  }
-}
