@@ -18,28 +18,28 @@
     </ul>
   </header>
 
-  <div class="container">
-    <div class="well login-box">
-        <form action="loginView.php" method="POST">
-            <center><h1>Login</h1></center>
-            <hr class="colorgraph">
-            <!-- username -->
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input value='' placeholder="Username" type="text" class="form-control" name="username" />
-            </div>
+  <div class="container" style="padding-left:150px; padding-right:150px">
 
-            <!-- password -->
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input  value='' placeholder="Password" type="password" class="form-control" name="password" />
-            </div>
-            <div class="form-group text-center">
-                <button class="btn btn-danger btn-cancel-action">Cancel</button>
-                <button type="submit" class="btn btn-success btn-login-submit" name="login">Login</button>
-            </div>
-        </form>
-    </div>
+
+    <form class="loginbox" action="/action_page.php" method="post" style="margin-top:100px;">
+      <div class="padding-login">
+        <label class="magic"><center> LOGIN SHOETRISNO</center></label>
+      </div>
+
+
+      <div class="padding-login" >
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+      </div>
+      <div class="padding-login" style="background-color:#40E0D0">
+        <span class="psw"><b>Belum Daftar?</b> <a href="#">Klik Disini</a></span>
+      </div>
+    </form>
 
   </div>
 </body>
