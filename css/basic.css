@@ -8,22 +8,15 @@ body{
   font-family: 'jose';
 }
 
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
-}
-
 a {
   color: #000;
 }
 
 /* header */
-
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 3;
 }
@@ -155,52 +148,4 @@ a {
   }
 
 
-  /* Give every child element its grid name */
-  .header {
-    grid-area: header;
-    background-color: white;
-  }
-
-  .sidenav {
-    grid-area: sidenav;
-    background-color: #D6d6d6;
-  }
-
-  .main {
-    grid-area: main;
-    background-color: #d6d6d6;
-  }
-
-  .footer {
-    grid-area: footer;
-    background-color: grey;
-  }
-
-  /* banner */
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
-    height: 150px; /* Force our height since we don't have actual content yet */
-    background-color: #e3e4e6;
-    color: slategray;
-  }
-
-
-  /* display produk */
-  .main-overview {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); /* Where the magic happens */
-      grid-auto-rows: 94px;
-      grid-gap: 20px;
-      margin: 20px;
-    }
-
-    .overviewcard {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: #d3d3;
-    }
+.
