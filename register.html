@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>REGISTER</title>
-    <link rel="stylesheet" type="text/css" href="css/basic.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-      <header class="header">
-        <img class="logo" src="img/logo.png" alt="">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#work">ABOUT</a></li>
-          <li><a href="#about">SHOP</a></li>
-          <li><a href="#careers">CART</a></li>
-          <li><a href="#contact">LOGIN</a></li>
-        </ul>
-      </header>
-      <!-- navbar -->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/basic.css">
+  <title></title>
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="img/logo.png" alt="">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#work">ABOUT</a></li>
+      <li><a href="#about">SHOP</a></li>
+      <li><a href="#careers">CART</a></li>
+      <li><a href="#contact">LOGIN</a></li>
+    </ul>
+  </header>
 
-      <div class="container">
-    
+  <div class="container" style="padding-left:150px; padding-right:150px">
+    <form class="loginbox" action="/action_page.php" method="post" style="margin-top:100px;">
+      <div class="padding-login">
+        <label class="magic"><center> REGISTER SHOETRISNO</center></label>
       </div>
-  </body>
+      <div class="padding-login" >
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="Email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Register</button>
+      </div>
+      <div class="padding-login" style="background-color:#40E0D0">
+        <span class="psw"><b>Sudah Punya Akun?</b> <a href="#">Klik Disini</a></span>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <p>Copyright ©2019 All rights reserved | This template is made with ♥ by TitoBagas</p>
+  </div> <!--/ .footer -->
+</body>
 </html>
