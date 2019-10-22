@@ -2,42 +2,47 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/basic.css">
-  <title>WEB KOK GAPAKE CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single Product</title>
+  <link rel="stylesheet" type="text/css" href="css/basic.css">
 </head>
-<body background="img/bgh.jpg"; background-size="cover">
-
+<body>
   <header class="header">
-  <img class="logo" src="img/logo.png" alt="">
+    <img class="logo" src="img/logo.png" alt="">
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#work">ABOUT</a></li>
+      <li><a href="#about">SHOP</a></li>
+      <li><a href="#careers">CART</a></li>
+      <li><a href="#contact">LOGIN</a></li>
     </ul>
   </header>
 
-  <section>
-    <table align="center" width="100%" border="0">
-      <br><br>
-      <tr>
-        <td width="200px" ><img src="img/sepatu_single.png" alt=""></td>
-        <td width="150px" ></td>
-        <td align="left">
-          <font size="5pt">Adidas new Hammer sole person 2 </font><br><br>
-          <font size="5pt">Rp. 2.000.000 </font><br><br>
-          <font size="3pt">Kategori : Sneaker </font><br>
-          <font size="3pt">Stok     : 300 </font><br><br>
-          <font size="3pt">Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley
-            of type and scrambled it to make a type specimen book.</font><br><br><br>
-            <img src="tombol.png" alt="">
-          </td>
-        </tr>
-      </table>
+  <div class="container">
+    <br><br><br><br>
+    <div class="middle">
+      <a href="#"> <img src="img/sepatu_single.png" alt=""> </a>
+    </div> <!--/ .middle -->
+
+    <div class="right">
+      <br><br><br>
+      <h2>Adidas new Hammer sole person 2</h2><br>
+      <h2>Rp. 2.000.000</h2>
+      <ul class="list">
+        <li><a class="active" href="#"><span>Category</span> : Sneaker</a></li>
+        <li><a href="#"><span>Availibility</span> : In Stock</a></li>
+      </ul>
+      <p style="align-items: justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+        a galley of type and scrambled it to make a type specimen book</p>
+        <form action="/action_page.php">
+          <p>Quantity : <input type="number" name="quantity" min="1" max="2"></p>
+          <button class="button" type="submit">Add to Cart</button>
+        </form>
+      </div> <!--/ .right -->
+    </div>
+    <div class="container">
       <table align="center" width="100%" border="0">
         <tr>
           <td align="center">
@@ -63,27 +68,32 @@
           </td>
         </tr>
       </table>
-      <table align="center" bgcolor="#000000" height="500px"width="100%" border="0">
+    </div>
+    <!-- <table align="center" width="100%" border="0">
+    <br><br>
+    <tr>
+    <td width="200px" ><img src="img/sepatu_single.png" alt=""></td>
+    <td width="150px" ></td>
+    <td align="left">
+    <font size="5pt">Adidas new Hammer sole person 2 </font><br><br>
+    <font size="5pt">Rp. 2.000.000 </font><br><br>
+    <font size="3pt">Kategori : Sneaker </font><br>
+    <font size="3pt">Stok     : 300 </font><br><br>
+    <font size="3pt">Lorem Ipsum is simply dummy text of the printing and
+    typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley
+    of type and scrambled it to make a type specimen book.</font><br><br><br>
+    <img src="tombol.png" alt="">
+  </td>
+</tr>
+</table>
+-->
+</div>
+<div class="footer">
+  <p>Copyright ©2019 All rights reserved | This template is made with ♥ by TitoBagas</p>
+</div> <!--/ .footer -->
+</body>
+</html>
 
-        <tr>
-          <td valign="top"><font color="white" size="10px" align="center"><h1>About Us</h1></font> <br>
-            <font color="white" align="center"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br>
-              <br> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p> </font>
-            </td>
-
-
-            <td valign="top" align="center"><font color="white" size="10px" align="center"><h1>News Letter</h1></font> <br>
-              <input type="text" name="" value="" placeholder="Subcribtion" size="50px">
-            </td>
-
-
-            <td valign="top"><font color="white" size="10px" align="center"><h1>Follow Us</h1></font></td>
-          </tr>
-
-        </table>
-
-      </section>
-
-      cek cok
-    </body>
-    </html>
+</body>
+</html>
