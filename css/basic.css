@@ -54,14 +54,16 @@ a:hover{
 
 .middle{
   width: 500px;
-  border: 1px solid #dedede;
+  height: 400px;
+  /* border: 1px solid #dedede; */
   padding: 10px;
   margin: 10px;
   float: left;
 }
 .middle img{
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
+  margin-left: 60px;
 }
 
 .middle a{
@@ -69,8 +71,8 @@ a:hover{
 }
 
 .right{
-  width: 250px;
-  border: 1px solid #dedede;
+  width: 400px;
+  /* border: 1px solid #dedede; */
   padding: 10px;
   margin: 10px;
   float: left;
@@ -120,12 +122,13 @@ MEDIA QUERIES
   }
   .middle {
     width: 68%;
-    float: right;
+    float: left;
+    margin-left: 22%
   }
 
   .right {
     clear: both;
-    padding: 1% 4%;
+    padding: 4% 4%;
     width: auto;
     float: none;
   }
@@ -534,6 +537,8 @@ span.psw {
         color: pink;
       }
     }
+<<<<<<< Updated upstream
+=======
     /* end */
 
 
@@ -650,6 +655,7 @@ span.psw {
 }
 /* end */
 
+<<<<<<< HEAD
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -718,3 +724,30 @@ span.psw {
   top: 0;
   opacity: 0;
 }
+=======
+/* pagination
+ */
+
+ /* button single product*/
+ .buttonAddtocart {
+   padding: 15px 25px;
+   font-size: 24px;
+   text-align: center;
+   cursor: pointer;
+   outline: none;
+   color: #fff;
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+ }
+
+ .buttonAddtocart:hover {background-color: #3e8e41}
+
+ .buttonAddtocart:active {
+   background-color: #3e8e41;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+>>>>>>> Stashed changes
+>>>>>>> bagas
