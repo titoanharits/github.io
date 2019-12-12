@@ -2,11 +2,11 @@
 
 [
   {
-    "product"		:"Compass Vintage Black",
-    "price"	: "Rp. 800K",
-    "stock"		:"In Stock",
+    "product"	  	: "Compass Vintage Black",
+    "price"     	: "Rp. 800K",
+    "stock"		    : "In Stock",
     "description" : "Sepokat Original bukan KW",
-    "image" : "sepatubaru.jpg"
-  },
+    "image"       : "sepatubaru.jpg"
+  }
 
 ]

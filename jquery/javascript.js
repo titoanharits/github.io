@@ -35,7 +35,7 @@ $(document).ready(function(){
       success: function (data) {
         $.each(data, function(index, elem) {
           console.log('product '+elem['product']+' - description '+elem['description']+' - price '+elem['price']+' - stock '+elem['stock']+' - image '+elem['image'])
-          $('#destination').prepend('  <section><a href="singleProduct.html"><img src="img/'+elem['image']+'" /></a><h2>'+elem['product']+'</h2><p>'+elem['description']+'</p><aside><ul><li>Price: '+elem['price']+'</li><li>'+elem['stock']+'</li></ul><button>Add to Cart</button></aside></section>');
+          $('#destination').prepend('<section><a href="singleProduct.html"><img src="img/'+elem['image']+'" /></a><h2>'+elem['product']+'</h2><p>'+elem['description']+'</p><aside><ul><li>Price: '+elem['price']+'</li><li>'+elem['stock']+'</li></ul><button>Add to Cart</button></aside></section>');
         });
       }
     });
