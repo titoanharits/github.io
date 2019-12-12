@@ -7,34 +7,34 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="img/logo.png" alt="">
+    <a href="index.html"> <img class="logo" src="img/logo.png"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="product.html">SHOP</a></li>
-      <li><a href="#careers">CART</a></li>
+      <li><a href="login.html" onclick="alert('Login First!!')">SHOP</a></li>
+      <li><a href="login.html" onclick="alert('Login First!!')">CART</a></li>
       <li><a href="login.html">LOGIN</a></li>
     </ul>
   </header>
 
   <div class="container" style="padding-left:150px; padding-right:150px">
-    <form class="loginbox" action="/action_page.php" method="post" style="margin-top:100px;">
+    <form class="loginbox" action="login.html" method="post" style="margin-top:100px;">
       <div class="padding-login">
-        <label class="magic"><center> REGISTER SHOETRISNO</center></label>
+        <label><center> REGISTER SHOETRISNO</center></label>
       </div>
       <div class="padding-login" >
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
         <label for="Email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="uname" required>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="pass" required>
 
-        <button type="submit">Register</button>
+        <button type="submit" onclick="alert('Success')">Register</button>
       </div>
-      <div class="padding-login" style="background-color:#40E0D0">
+      <div class="padding-login bglogin">
         <span class="psw"><b>Sudah Punya Akun?</b> <a href="#">Klik Disini</a></span>
       </div>
     </form>

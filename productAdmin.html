@@ -11,9 +11,9 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="product.html">PRODUCT</a></li>
+      <li><a href="productAdmin.html">PRODUCT</a></li>
       <li><a href="#careers">ORDER</a></li>
-      <li><a href="login.html">ADMIN</a></li>
+      <li><a href="#" onclick="alert('Hi, Admin :)')">ADMIN</a></li>
     </ul>
   </header>
 
@@ -22,7 +22,7 @@
     <button class="modalbutton" id="myBtn" style="margin-top:81px;">Add Product</button>
     <div class="product">
       <header>
-        <h1>Our Product</h1>
+        <h1>Add Product</h1>
 
         <hr>
       </header>
@@ -112,6 +112,8 @@
     </div>
   </div>
 
+  <div class="flex" id="destination"></div>
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -119,62 +121,38 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form class="" action="/action_page.php" method="post">
+    <form class="">
 
       <br>
       <div class="padding-login" >
         <label for="uname"><b>Product Name</b></label>
-        <input type="text" placeholder="Enter Name" name="uname" required>
+        <input type="text" placeholder="Enter Name" name="uname">
 
         <label for="Email"><b>Price</b></label>
-        <input type="text" placeholder="Enter Price" name="uname" required>
+        <input type="text" placeholder="Enter Price" name="uname">
 
         <label for="Email"><b>Stock</b></label>
-        <input type="text" placeholder="Enter Price" name="uname" required>
+        <input type="text" placeholder="Enter Price" name="uname" >
 
         <label for="psw"><b>Description</b></label>
-        <input type="password" placeholder="Enter Description" name="psw" required>
+        <input type="password" placeholder="Enter Description" name="psw">
 
         <div class="upload-btn-wrapper">
-          <label for=""><b>Picture</b></label>
-          <button class="btnup">Upload Pic</button>
-          <input type="file" name="myfile" />
+          <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+          <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+          <p><img id="output" width="200" /></p>
+
         </div>
 
-        <button class="buttonmodal" type="submit">Save</button>
+        <button class="buttonmodal" id="load" onclick="alert('sukses menambah barang:)')">Save</button>
       </div>
     </form>
   </div>
 
 </div>
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="jquery/javascript.js"></script>
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-</script>
 </body>
 </html>
