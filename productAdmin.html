@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Our Product</title>
+  <title>Our Product Admin</title>
   <link rel="stylesheet" type="text/css" href="css/basic.css">
 </head>
 <body>
@@ -11,9 +11,8 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="#work">ABOUT</a></li>
-      <li><a href="product.html">SHOP</a></li>
-      <li><a href="#careers">CART</a></li>
+      <li><a href="product.html">PRODUCT</a></li>
+      <li><a href="#careers">ORDER</a></li>
       <li><a href="login.html">ADMIN</a></li>
     </ul>
   </header>
@@ -42,7 +41,7 @@
             <li>Price: Rp. 900k</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
 
@@ -55,7 +54,7 @@
             <li>Price: Rp. 2500K</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
 
@@ -68,7 +67,7 @@
             <li>Price: Rp. 5000k</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
 
@@ -81,7 +80,7 @@
             <li>Price: Rp. 1300K</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
 
@@ -94,7 +93,7 @@
             <li>Price: Rp. 2200K</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
 
@@ -107,79 +106,75 @@
             <li>Price: Rp. 1900K</li>
             <li>In Stock</li>
           </ul>
-          <button>Add to Cart</button>
+          <button>Details</button>
         </aside>
       </section>
     </div>
   </div>
 
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <form class="" action="/action_page.php" method="post">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="" action="/action_page.php" method="post">
 
-        <br>
-        <div class="padding-login" >
-          <label for="uname"><b>Product Name</b></label>
-          <input type="text" placeholder="Enter Name" name="uname" required>
+      <br>
+      <div class="padding-login" >
+        <label for="uname"><b>Product Name</b></label>
+        <input type="text" placeholder="Enter Name" name="uname" required>
 
-          <label for="Email"><b>Price</b></label>
-          <input type="text" placeholder="Enter Price" name="uname" required>
+        <label for="Email"><b>Price</b></label>
+        <input type="text" placeholder="Enter Price" name="uname" required>
 
-          <label for="Email"><b>Stock</b></label>
-          <input type="text" placeholder="Enter Price" name="uname" required>
+        <label for="Email"><b>Stock</b></label>
+        <input type="text" placeholder="Enter Price" name="uname" required>
 
-          <label for="psw"><b>Description</b></label>
-          <input type="password" placeholder="Enter Description" name="psw" required>
+        <label for="psw"><b>Description</b></label>
+        <input type="password" placeholder="Enter Description" name="psw" required>
 
-          <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-          <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-          <p><img id="output" width="200" /></p>
-
-          <button class="buttonmodal" type="submit">Save</button>
+        <div class="upload-btn-wrapper">
+          <label for=""><b>Picture</b></label>
+          <button class="btnup">Upload Pic</button>
+          <input type="file" name="myfile" />
         </div>
-      </form>
-    </div>
 
+        <button class="buttonmodal" type="submit">Save</button>
+      </div>
+    </form>
   </div>
 
-
+</div>
 
 <script>
-var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
-};
-</script>
-  <script type="text/javascript" src="jquery/jquery.js"></script>
-  <script>
-  var modal = document.getElementById("myModal");
+// Get the modal
+var modal = document.getElementById("myModal");
 
-  var btn = document.getElementById("myBtn");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-  var span = document.getElementsByClassName("close")[0];
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-  span.onclick = function() {
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
     modal.style.display = "none";
   }
+}
 
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
 </script>
-
-
-
-
 </body>
 </html>

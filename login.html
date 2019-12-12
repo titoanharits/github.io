@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/basic.css">
   <title></title>
-
-  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -13,7 +11,6 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="#work">ABOUT</a></li>
       <li><a href="#about">SHOP</a></li>
       <li><a href="#careers">CART</a></li>
       <li><a href="register.html">REGISTER</a></li>
@@ -23,41 +20,29 @@
   <div class="container" style="padding-left:150px; padding-right:150px">
 
 
-    <form class="loginbox" function="validasi()"  method="post" style="margin-top:100px;">
+    <form class="loginbox" action="/action_page.php" method="post" style="margin-top:100px;">
       <div class="padding-login">
-        <label class=""><center> LOGIN SHOETRISNO</center></label>
+        <label class="magic"><center> LOGIN SHOETRISNO</center></label>
       </div>
 
 
       <div class="padding-login" >
         <label for="uname"><b>Username</b></label>
-        <input type="text" id="uname" placeholder="Enter Username" name="uname"  required >
+        <input type="text" placeholder="Enter Username" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="button" onclick="validasi()">Login</button>
+        <button type="submit">Login</button>
       </div>
       <div class="padding-login" style="background-color:#40E0D0">
         <span class="psw"><b>Belum Daftar?</b> <a href="#">Klik Disini</a></span>
       </div>
     </form>
-
-    <p id="output"></p>
   </div>
 
   <div class="footer">
     <p>Copyright ©2019 All rights reserved | This template is made with ♥ by TitoBagas</p>
   </div> <!--/ .footer -->
-
-  <script type="text/javascript">
-  function validasi() {
-    var x = document.getElementById("uname", "pass").value;
-  document.getElementById("output").innerHTML = x;
-  }
-
-
-
-  </script>
 </body>
 </html>
