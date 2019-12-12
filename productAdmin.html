@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="img/logo.png" alt="">
+    <a href="index.html"> <img class="logo" src="img/logo.png"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
@@ -19,7 +19,7 @@
 
   <div class="container">
     <!-- Trigger/Open The Modal -->
-    <button class="modalbutton" id="myBtn" style="margin-top:81px;">Add Product</button>
+    <button class="modalbutton modalbutton-pos" id="myBtn">Add Product</button>
     <div class="product">
       <header>
         <h1>Add Product</h1>
@@ -33,7 +33,7 @@
 
     <div class="flex" id="destination">
       <section>
-        <a href="singleProduct.html"> <img src="img/product1.jpg" /></a>
+        <a href="singleProductAdmin.html"> <img src="img/product1.jpg" /></a>
         <h2>VANS Old School Sneaker</h2>
         <p>The best seller shoes from VANS</p>
         <aside>
@@ -41,7 +41,7 @@
             <li>Price: Rp. 900k</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
 
@@ -54,7 +54,7 @@
             <li>Price: Rp. 2500K</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
 
@@ -67,7 +67,7 @@
             <li>Price: Rp. 5000k</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
 
@@ -80,7 +80,7 @@
             <li>Price: Rp. 1300K</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
 
@@ -93,7 +93,7 @@
             <li>Price: Rp. 2200K</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
 
@@ -106,19 +106,18 @@
             <li>Price: Rp. 1900K</li>
             <li>In Stock</li>
           </ul>
-          <button>Details</button>
+          <a href="singleProductAdmin.html"><button>Details</button></a>
         </aside>
       </section>
     </div>
   </div>
 
-<!-- The Modal -->
+<!-- modal -->
 <div id="myModal" class="modal">
-
-  <!-- Modal content -->
+<!-- isi modal -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form class="">
+
 
       <br>
       <div class="padding-login" >
@@ -129,21 +128,21 @@
         <input type="text" placeholder="Enter Price" name="uname">
 
         <label for="Email"><b>Stock</b></label>
-        <input type="text" placeholder="Enter Price" name="uname" >
+        <input type="text" placeholder="Enter Stock" name="uname" >
 
         <label for="psw"><b>Description</b></label>
         <input type="password" placeholder="Enter Description" name="psw">
 
         <div class="upload-btn-wrapper">
-          <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-          <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+          <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"></p>
+          <p><label for="file">Upload Image</label></p>
           <p><img id="output" width="200" /></p>
 
         </div>
 
-        <button class="buttonmodal" id="load" onclick="alert('sukses menambah barang:)')">Save</button>
+        <button class="buttonmodal" id="load" onclick="alert('Sukses ditambahkan')">Save</button>
       </div>
-    </form>
+
   </div>
 
 </div>

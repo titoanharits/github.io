@@ -8,52 +8,91 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="img/logo.png" alt="">
+    <a href="index.html"> <img class="logo" src="img/logo.png"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="product.html">SHOP</a></li>
-      <li><a href="#careers">CART</a></li>
-      <li><a href="login.html">TITO</a></li>
+      <li><a href="productPelanggan.html">SHOP</a></li>
+      <li><a href="cart.html">CART</a></li>
+      <li><a onclick="alert('Hi, Tito!')">TITO</a></li>
     </ul>
   </header>
 
   <div class="container">
     <br><br><br><br><br><br>
-  <div class="container">
-    <table align="center" width="100%" border="0">
-      <tr>
-        <td align="center">
-          <font size="9pt">CART</font>
-        </td>
-      </tr>
-    </table>
-    <table  align="center" width="100%" border="0" >
-      <tr>
-        <th colspan="2">Product</th>
-        <th>Quantity</th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <td align ="center"><img width="100px" src="img/sepatu_single.png"></td>
-        <td align ="center">Adidas new Hammer sole person 2</td>
-        <td  align ="center">1</td>
-        <td align ="center">RP. 2000.000</td>
-      </tr>
-    </table>
-  </div>
-  <br><br><br>
-  <form action="/action_page.php">
-  <button width ="30px" class="button" type="submit">Checkout</button>
-  </form>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br>
-<div class="footer">
-  <p>Copyright ©2019 All rights reserved | This template is made with ♥ by TitoBagas</p>
-</div> <!--/ .footer -->
-</body>
-</html>
+    <div class="container">
+      <table align="center" width="100%" border="0">
+        <tr>
+          <td align="center">
+            <font size="9pt">CART</font>
+          </td>
+        </tr>
+      </table>
+      <table  align="center" width="100%" border="0" >
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td align ="center"><a href="singleProductPelanggan.html"> <img width="100px" src="img/product2.jpg"> </a></td>
+          <td align ="center">Adidas new Hammer sole person 2</td>
+          <td  align ="center">1</td>
+          <td align ="center">RP. 2000.000</td>
+        </tr>
+      </table>
+    </div>
+    <br><br><br>
 
+    <button class="button" type="submit" id="myBtn">Checkout</button>
+
+  </div>
+
+
+  <div id="myModal" class="modal">
+
+    <!-- isi modal -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <br>
+      <div class="padding-login" >
+        <label><b>Nama Penerima</b></label>
+        <input type="text" placeholder="Enter Name">
+
+        <label><b>Alamat Penerima</b></label>
+        <input type="text" placeholder="Enter Address">
+
+        <label><b>Nomor Hp</b></label>
+        <input type="text" placeholder="Enter Phone" >
+
+        <label><b>Provinsi</b></label>
+        <input type="text" placeholder="Enter Provinsi">
+
+        <label><b>Kota</b></label>
+        <input type="text" placeholder="Enter Kota">
+
+        <label><b>Kecamatan</b></label>
+        <input type="text" placeholder="Enter Kecamatan">
+
+        <form class="" action="productPelanggan.html" method="post">
+          <button class="buttonmodal" onclick="alert('Terimakasih Sudah Order !!')">Checkout</button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer space">
+    <p>Copyright ©2019 All rights reserved | This template is made with ♥ by TitoBagas</p>
+  </div> <!--/ .footer -->
+
+  <script type="text/javascript" src="jquery/jquery.js"></script>
+  <script type="text/javascript" src="jquery/javascript.js"></script>
 </body>
 </html>
